@@ -38,3 +38,9 @@ def agendar_atendimento(id_barbeiro, id_disponibilidade, id_penteado):
     resposta = resposta.read()
     return resposta.decode("utf-8")
 
+
+if __name__ == "__main__":
+    servico.run(
+        host="0.0.0.0",
+        debug=True
+    )
